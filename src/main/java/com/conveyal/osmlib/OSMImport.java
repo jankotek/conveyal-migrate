@@ -85,7 +85,7 @@ public class OSMImport {
         }
 
         File db2File = new File(args[1]);
-        if(!db2File.exists()){
+        if(db2File.exists()){
             System.out.println("Output MapDB 2 file already exists");
             return;
         }

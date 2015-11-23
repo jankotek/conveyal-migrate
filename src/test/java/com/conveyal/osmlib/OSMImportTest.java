@@ -13,6 +13,7 @@ public class OSMImportTest {
     @Test
     public void test_import() throws IOException {
         File t = File.createTempFile("mapdb","osm");
+        t.delete();
         t.deleteOnExit();
 
         //run import
